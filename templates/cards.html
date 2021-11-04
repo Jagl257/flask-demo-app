@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flashcard</title>
+	</head>
+
+	<body>
+		<h1> Flash Cards </h1>
+		{% for card in cards %}
+		
+		<button><a href="{{ url_for('card_view', index=card.id) }}"> Card {{card.id}} </a></button>
+
+		{% endfor %}
+
+	</body>
+</html>
+
+

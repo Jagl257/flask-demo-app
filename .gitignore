@@ -1,0 +1,11 @@
+*.swp
+*.pyc
+*ExportContact*
+venv
+.cache/
+.direnv/
+.idea/
+.env
+.env.test
+.venv/
+__pycache__/
