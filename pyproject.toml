@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 79 # pep8
+target-version = ['py38'] #Python version supported by black output
+exclude = ''' 
+/(
+  | migrations 
+	| venv
+)/
+
+''' # exclude migrations and venv
+

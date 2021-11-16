@@ -1,0 +1,18 @@
+[flake8]
+
+########## Verbosity ##########
+
+# Increase the verbosity of Flake8’s output.
+verbose = 0
+# Decrease the verbosity of Flake8’s output.
+quiet = 0
+
+max-line-length = 79
+exclude =
+    .git,          # No need to traverse our git directory
+    __pycache__,   # There's no value in checking cache directories
+		venv,          # Theres no need to check venv file
+    migrations/*,  # No need to check migrations
+    static/*,      # No need to check static files
+
+
